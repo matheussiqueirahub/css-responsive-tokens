@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: Variáveis CSS Responsivas</title>
+    <style>
+      :root {
+        --font-size-base: 15px;
+        --font-size-h1: 26px;
+        --font-size-h2: 20px;
+        --spacing-gap: 16px;
+        --spacing-section: 20px;
+      }
+
+      @media (min-width: 768px) {
+        :root {
+          --font-size-base: 16px;
+          --font-size-h1: 30px;
+          --font-size-h2: 22px;
+          --spacing-gap: 20px;
+          --spacing-section: 28px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        :root {
+          --font-size-base: 17px;
+          --font-size-h1: 34px;
+          --font-size-h2: 24px;
+          --spacing-gap: 24px;
+          --spacing-section: 32px;
+        }
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size-base);
+        background-color: #f1f5f9;
+        color: #1f2937;
+      }
+
+      header {
+        padding: var(--spacing-gap);
+        background-color: #0f172a;
+        color: #f8fafc;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: var(--font-size-h1);
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: var(--spacing-gap);
+        display: grid;
+        gap: var(--spacing-gap);
+      }
+
+      section {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: var(--spacing-section);
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: var(--font-size-h2);
+        color: #0f172a;
+      }
+
+      p {
+        margin-bottom: var(--spacing-gap);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Exercício: Variáveis CSS Responsivas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Instruções</h2>
+        <p>
+          Utilize este modelo para praticar a criação de variáveis CSS voltadas para tipografia e espaçamentos responsivos.
+        </p>
+      </section>
+      <section>
+        <h2>O que observar</h2>
+        <p>
+          Redimensione a janela e perceba como o tamanho das fontes e dos espaçamentos acompanha os pontos de quebra estabelecidos.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
